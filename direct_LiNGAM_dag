@@ -1,0 +1,25 @@
+digraph {
+	x0
+	x1
+	x2
+	x3
+	x4
+	x6
+	x7
+	x8
+	x9
+	x10
+	x0 -> x2 [label=0.09]
+	x1 -> x2 [label=4.01]
+	x1 -> x8 [label=4.91]
+	x4 -> x8 [label=9.98]
+	x4 -> x9 [label=0.56]
+	x8 -> x9 [label=9.93]
+	x0 -> x10 [label=500.00]
+	x6 -> x10 [label=25000.00]
+	x8 -> x10 [label=5000.04]
+	x9 -> x10 [label=900.00]
+	{
+		rank=same
+	}
+}

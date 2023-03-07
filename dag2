@@ -1,0 +1,44 @@
+digraph {
+	income
+	hrs_work
+	age
+	gender
+	citizen
+	time_to_work
+	lang
+	married
+	disability
+	race_asian
+	race_black
+	race_other
+	race_white
+	edu_college
+	edu_grad
+	"edu_hs or lower"
+	hrs_work -> income [label=936.46]
+	age -> income [label=375.34]
+	gender -> income [label=13857.43]
+	married -> income [label=4170.50]
+	disability -> income [label=-4162.44]
+	race_asian -> income [label=17654.61]
+	edu_grad -> income [label=38757.58]
+	"edu_hs or lower" -> income [label=-14430.52]
+	age -> hrs_work [label=0.02]
+	gender -> hrs_work [label=4.83]
+	time_to_work -> hrs_work [label=0.02]
+	married -> hrs_work [label=1.82]
+	race_asian -> citizen [label=-0.24]
+	race_other -> citizen [label=-0.15]
+	race_white -> citizen [label=0.02]
+	citizen -> lang [label=0.53]
+	race_asian -> lang [label=-0.41]
+	race_other -> lang [label=-0.27]
+	age -> married [label=0.01]
+	gender -> married [label=0.11]
+	disability -> married [label=-0.10]
+	race_black -> married [label=-0.15]
+	race_white -> married [label=0.01]
+	{
+		rank=same
+	}
+}
